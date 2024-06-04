@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 20vh; /* add padding-bottom equal to footer height */
+}
+
+
+header {
+  background-color: #0563a7;
+  color: #d4caca;
+  padding: 20px;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  flex: 1;
+  margin-top: 15vh; /* to push content below header */
+  margin-bottom: 25vh; /* to make space for footer */
+}
+
+
+footer {
+  margin: 0 auto;
+  align-items: center;
+  background-color: #b4d3ea;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  height: 20vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto; /* Add this property to make footer scrollable */
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.button-68 {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+
+.button-68:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-68:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-68:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#category-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+  #category-menu li {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 50px;
+  }
+  
+  #category-menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #category-menu li:hover > ul {
+    display: inline-block;
+  }
+  
+  #category-menu a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    color: #000000;
+    background: #2dd871;
+  }
+  
+  #category-menu a:hover {
+    background: #5d7e69;
+  }
+
+ 
+  .logo {
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.item {
+  border:2px solid rgb(73, 163, 211); 
+  padding:10px; 
+  text-align:center;
+}
+
+.table{
+  display:grid; 
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-gap: 10px;
+}
+
+.item h3 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.item p {
+  font-size: 15px;
+}
+
+.item img{
+  max-width:200px; 
+  max-height:200px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search input[type="text"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.search button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.search button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.required {
+  color: red;
+}
+
+.order-form-container {
+  width: 25%;
+  margin: auto;
+}
+
+#order-form {
+  border-collapse: collapse;
+}
+
+#order-form td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+#order-form input[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
